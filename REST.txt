@@ -1,0 +1,21 @@
+What is REST?
+- Representational State Transfer: An architecture for web services
+- Requests are made through HTTP and uses the same verbs:
+  - GET:    Retrieve data from web service (Download existing)
+  - POST:   Create new item on web service (Upload new)
+  - PUT:    Update an item on web service  (Edit existing exactly)
+  - PATCH:  Update item using instructions (Edit existing in 
+            on how to modify                given pattern)
+  - DELETE: Delete an item on web service  (Remove existing)
+
+Web service APIs adhering to REST are called RESTful APIs, defined by:
+- Base URI
+- HTTP methods (verbs listed above)
+- Media type for data such as JSON, XML, etc.
+
+Media types usually need to provide services for multiple related but different thngs
+e.g. Pizzas, Customers, Orders
+-> Use routing to map URIs in logical divisions 
+example: https://xxx.x/pizza -> PizzaController, https://.../order -> OrderController
+
+(Controllers are classes that handle HTTP requests)
